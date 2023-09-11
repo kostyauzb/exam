@@ -1,0 +1,291 @@
+
+.mb0{
+    margin-bottom: 0;
+}
+
+.web-main{
+    flex-grow: 1;
+    z-index: 100;
+    .design{
+        background-color: $peach-color;
+        border-radius: 15px;
+        text-align: center;
+        background: url(../../images/png/design-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        padding: 6.4rem 0rem;
+        margin-bottom: 16rem;
+        .design-title{
+            color: $white-color;
+            margin-bottom: 2.4rem;
+        }
+        .design-text{
+            width: 100%;
+            max-width: 400px;
+            color: $white-color;
+            margin: auto;
+        }
+    }
+    .web-cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 16rem;
+        .web-cards-item{
+            display: flex;
+            flex-direction: column;
+            gap: 3.2rem;
+            text-align: center;
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            cursor: pointer;
+            margin: 1.6rem 1rem;
+            border-radius: 15px;
+            background-color: #FDF3F0;
+            &:hover .web-cards-item-title{
+                color: $white-color !important;
+            }
+            &:hover{
+                background-color:$peach-color;
+                color: white;
+            }
+
+            .content-wrapper{
+                display: flex;
+                flex-direction: column;
+                .web-cards-item-title{
+                    color: $peach-color;
+                    margin-bottom: 1.6rem;
+                }
+                .web-cards-item-text{
+                    width: 100%;
+                    max-width: 280px;
+                    margin: auto;
+                    margin-bottom: 3.2rem;
+                }
+            }
+        }
+    }
+    .designes-wrapper{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 16rem;
+        text-align: center;
+        gap: 3rem;
+        .web-app-design{
+            background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)) , url(../../images/png/app-design.png);
+            background-repeat: no-repeat;
+            background-size:cover; 
+            background-position: center;
+            width: 100%;
+            max-width: 540px;
+            height: 308px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            .web-app-design-title{
+                color: $white-color;
+                margin-bottom: 2.4rem;
+            }
+            .web-app-design-link{
+                display: flex;
+                gap: 2rem;
+                align-items: center;
+                color: $white-color;
+                letter-spacing: 5px;
+            }
+        }
+        .web-graphic-design{
+            background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)) , url(../../images/png/web-design.png);
+            background-repeat: no-repeat;
+            background-size:cover; 
+            background-position: center;
+            width: 100%;
+            max-width: 540px;
+            height: 308px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            .web-graphic-design-title{
+                color: $white-color;
+                margin-bottom: 2.4rem;
+            }
+            .web-graphic-design-link{
+                display: flex;
+                gap: 2rem;
+                align-items: center;
+                color: $white-color;
+                letter-spacing: 5px;
+            }
+        }
+    }
+    .contact{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        background: url(../../images/png/contact-bg.png);
+        background-color:$peach-color;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right center;
+        padding: 7rem 9rem;
+        border-radius: 15px;
+        margin-bottom: -70px;
+        .contact-info{
+            .contact-info-title{
+                color: $white-color;
+                width: 100%;
+                max-width: 268px;
+                margin-bottom: 0.7px;
+            }
+            .contact-info-text{
+                color: $white-color;
+                width: 100%;
+                max-width: 459px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:850px) {
+    .web-main{
+        .design{
+            margin-bottom: 10rem;
+        }
+        .web-cards{
+            margin-bottom: 10rem;
+        }
+        .designes-wrapper{
+            margin-bottom: 10rem;
+        }
+        .contact{
+            padding: 5.7rem 3rem;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .web-main{
+        .web-cards{
+            .web-cards-item{
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                gap: 0;
+                max-width: 100%;
+                .content-wrapper{
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    .web-cards-item-text{
+                        padding: 0px 10px;
+                    }
+                }
+            }
+        }
+        .designes-wrapper{
+            max-width: 100%;
+            flex-direction: column;
+            .web-app-design{
+                max-width: 100%;
+                height: 200px;
+                .web-app-design-title{
+                    font-size: 4rem;
+                }
+            }
+            .web-graphic-design{
+                max-width: 100%;
+                height: 200px;
+                .web-graphic-design-title{
+                    font-size: 4rem;
+                }
+            }
+        }
+        .contact{
+            background-position: right -250px center;
+            text-align: center;
+            flex-direction: column;
+            .contact-info{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .contact-info-title{
+                    margin-bottom: 1.5rem;
+                }
+                .contact-info-text{
+                    margin-bottom: 3.2rem;
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width:630px) {
+    .web-main{
+        .web-cards{
+            .web-cards-item{
+                flex-direction: column;
+                display: flex;
+                gap: 3.2rem;
+                text-align: center;
+                width: 100%;
+                max-width: 350px;
+                height: auto;
+                .web-cards-item-img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:450px) {
+    .web-main{
+        .contact{
+            background-position: right -400px center;
+            .contact-info{
+                .contact-info-title{
+                    font-size: 3.2rem;
+                    line-height: 36px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:400px) {
+    .web-main{
+        .design{
+            .design-title{
+                font-size: 3.2rem;
+            }
+            .design-text{
+                font-size: 1.5rem;
+                padding: 0px 10px;
+            }
+        }
+        .designes-wrapper{
+            .web-app-design{
+                .web-app-design-title{
+                    font-size: 2.8rem;
+                }
+            }
+            .web-graphic-design{
+                .web-graphic-design-title{
+                    font-size: 2.8rem;
+                }
+            }
+        }
+    }
+}

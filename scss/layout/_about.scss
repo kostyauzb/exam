@@ -1,0 +1,42 @@
+.about-hero {
+    width: 100%;
+    background: url(../../images/png/Oval.png);
+    background-repeat: no-repeat;
+    background-color: $peach-color;
+    color: $white-color;
+    padding-top: 13.5rem;
+    padding-left: 9.5rem;
+    padding-bottom: 13.5rem;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    .hero-content-title {
+        margin-bottom: 3.2rem;
+    }
+    .hero-content-text {
+        width: 100%;
+        max-width: 45.8rem;
+    }
+}
+.about-talent {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16rem;
+    .talent-img {
+        width: 100%;
+        max-width: 476px;
+        height: 773px;
+        background-image: url(../../images/png/Bitmap\ \(1\).png);
+        background-repeat: no-repeat;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+    .talent-content {
+        background: #FDF3F0;
+        border-radius: 15px;
+    }
+    .talent-content-title {
+    }
+    .talent-text {
+    }
+}
